@@ -1,0 +1,31 @@
+{
+    "name": "@joshica/ux",
+    "version": "1.0.0-alpha.1",
+    "description": "The User Experience Project",
+    "scripts": {
+        "build": "npm run clean && node_modules/.bin/webpack",
+        "build:dev": "npm run clean && node_modules/.bin/webpack --mode=development",
+        "build:dev:watch": "npm run clean && node_modules/.bin/webpack --mode=development --watch",
+        "clean": "rm -rf dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sdfcloud/joshica.git"
+    },
+    "author": "joshica",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sdfcloud/joshica/issues"
+    },
+    "homepage": "https://github.com/sdfcloud/joshica#readme",
+    "devDependencies": {
+        "css-loader": "^7.1.2",
+        "sass": "^1.89.2",
+        "sass-loader": "^16.0.5",
+        "style-loader": "^4.0.0",
+        "ts-loader": "^9.5.2",
+        "typescript": "^5.8.3",
+        "webpack": "^5.99.9",
+        "webpack-cli": "^6.0.1"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "esnext",
+        "declaration": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "@core/*": [
+                "src/core/*"
+            ],
+            "@joshica/ux": [
+                "src/experiences.ts"
+            ],
+            "@joshica/ux/core": [
+                "src/core.ts"
+            ],
+        },
+        "esModuleInterop": true,
+        "strictPropertyInitialization": false
+    }
+}

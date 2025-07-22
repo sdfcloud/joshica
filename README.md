@@ -1,1 +1,4 @@
-# The Joshica UX Project
+# Joshica
+---
+
+The User Experience Project
