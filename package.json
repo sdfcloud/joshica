@@ -6,7 +6,7 @@
         "build": "npm run clean && node_modules/.bin/webpack",
         "build:dev": "npm run clean && node_modules/.bin/webpack --mode=development",
         "build:dev:watch": "npm run clean && node_modules/.bin/webpack --mode=development --watch",
-        "start:demo": "node demo/server.js",
+        "start:demo": "node server.js",
         "start:development": "concurrently -n \"build,demo\"  \"npm run build:dev:watch\" \"npm run start:demo\"",
         "clean": "rm -rf dist"
     },
