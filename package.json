@@ -1,11 +1,13 @@
 {
     "name": "@joshica/ux",
-    "version": "1.0.0-alpha.1",
+    "version": "1.0.0-alpha.2",
     "description": "The User Experience Project",
     "scripts": {
         "build": "npm run clean && node_modules/.bin/webpack",
         "build:dev": "npm run clean && node_modules/.bin/webpack --mode=development",
         "build:dev:watch": "npm run clean && node_modules/.bin/webpack --mode=development --watch",
+        "start:demo": "node demo/server.js",
+        "start:development": "concurrently -n \"build,demo\"  \"npm run build:dev:watch\" \"npm run start:demo\"",
         "clean": "rm -rf dist"
     },
     "repository": {
@@ -19,7 +21,9 @@
     },
     "homepage": "https://github.com/sdfcloud/joshica#readme",
     "devDependencies": {
+        "concurrently": "^9.2.0",
         "css-loader": "^7.1.2",
+        "express": "^5.1.0",
         "sass": "^1.89.2",
         "sass-loader": "^16.0.5",
         "style-loader": "^4.0.0",

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshica - The user experience project</title>
+    <link rel="stylesheet" href="/demo.css">
+    <link rel="stylesheet" href="/home.css">
+    <script src="/joshica.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Joshica</h1>
+        <h2>The User Experience Project</h2>
+    </header>
+    <div class="intro">
+        <p>A light-weight bundle of user experiences for web apps</p>
+    </div>
+    <div class="container">
+        <section class="demo">
+            <h2>Quick Demo</h2>
+<pre class="code">
+&lt;div id="modal" ux="modalWidget"&gt;
+    This is a sample modal dialog box.
+&lt;/div&gt;
+
+&lt;button id="modalButton" ux="buttonBehavior" action="#modal, modalWidget, open"&gt;Open Modal&lt;/button&gt;
+</pre>
+            <div id="modal" ux="modalWidget">
+                This is a sample modal dialog box.
+            </div>
+            <button id="modalButton" ux="buttonBehavior" action="#modal, modalWidget, open">Open Modal</button>
+            <script>
+                document.getElementById('modalButton').addEventListener('click', function() {
+                    const modalEl = ux.querySelector('#modal');
+                    const uiModal = ux.getUx(modalEl, 'uiModal');
+                    uiModal.open();
+                });
+
+                ux.refresh();
+            </script>
+        </section>
+
+        <h2>Experiences</h2>
+        <section class="behaviors">
+            <h3>A11y</h3>
+            <div class="experiences">
+                <div class="experience">
+                    <div class="content">
+                        <h4>ariaLabelValidationBehavior</h4>
+                        <p>Contains logic to check the HTML Element for proper aria-label or aria-labeled-by. This experience will produce a console warning when an aria-label is missing. Use when you want to ensure aria-labels are correctly placed.</p>
+<pre class="code">
+&lt;div class="button" role="button" ux="ariaLabelValidationBehavior"&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="content">
+                        <h4>focusTrapBehavior</h4>
+                        <p>Contains logic to capture and trap keyboard focus. Mostly used with modals and dialog boxes. This experience will trap keyboard focus so that the focus cannot be moved out side of the experience.</p>
+<pre class="code">
+&lt;div class="modal" role="modal" ux="focusTrapBehavior"&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="experience-empty"></div>
+            </div>
+            <h3>Controls</h3>
+            <div class="experiences">
+                <div class="experience">
+                    <div class="content">
+                        <h4>buttonBehavior</h4>
+                        <p>Contains all of the functionality needed to implement a control button. Use this when you want the behavior of a button but you already have your own button styles.</p>
+                        <p>Imports:</p>
+                        <ul>
+                            <li>mouseEventBehavior</li>
+                            <li>keyboardEventBehavior</li>
+                        </ul>
+<pre class="code">
+&lt;div class="button" ux="buttonBehavior"&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="content">
+                        <h4>buttonWidget</h4>
+                        <p>Contains all of the functionality of a "buttonBehavior" experience, but includes a button UI.</p>
+                        <p>Imports:</p>
+                        <ul>
+                            <li>buttonBehavior</li>
+                        </ul>
+<pre class="code">
+&lt;div class="button" ux="buttonWidget"&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="experience-empty"></div>
+            </div>
+            <h3>Events</h3>
+            <div class="experiences">
+                <div class="experience">
+                    <div class="content">
+                        <h4>keyboardEventBehavior</h4>
+                        <p>This experience is used to register keyboard event actions.</p>
+<pre class="code">
+&lt;div class="button" ux="keyboardEventBehavior"&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="content">
+                        <h4>mouseEventBehavior</h4>
+                        <p>This experience is used to register mouse event actions.</p>
+<pre class="code">
+&lt;div class="button" ux="mouseEventBehavior"&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="experience-empty"></div>
+            </div>
+            <h3>Popups</h3>
+            <div class="experiences">
+                <div class="experience">
+                    <div class="content">
+                        <h4>modalBehavior</h4>
+                        <p>Contains all of the functionality for a standard modal. Use this when you want a container to behave like a modal and you want to style it yourself. If you would like a fully implemented modal with a UI use the "modalWidget" experience instead.</p>
+                        <p>Imports:</p>
+                        <ul>
+                            <li>focusTrapBehavior</li>
+                            <li>ariaLabelValidationBehavior</li>
+                        </ul>
+<pre class="code">
+&lt;div class="modal" ux="modalBehavior"&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="content">
+                        <h4>modalWidget</h4>
+                        <p>Contains all functionality of the "modalBehavior" experience but implements a UI on top of that. If you have built your own modal and would just like to implement the functionality, use the "modalBehavior" experience.</p>
+                        <p>Imports:</p>
+                        <ul>
+                            <li>modalBehavior</li>
+                        </ul>
+<pre class="code">
+&lt;div class="modal" ux="modalWidget"&gt;
+&lt;/div&gt;
+</pre>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="experience-empty"></div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>
+            <a href="https://github.com/joshica/docs">Docs</a> |
+            <a href="https://github.com/joshica">GitHub</a> |
+            <a href="https://github.com/joshica/releases">Download</a>
+        </p>
+    </footer>
+</body>
+</html>
