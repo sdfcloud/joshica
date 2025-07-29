@@ -1,0 +1,16 @@
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 786px) {
+        @content;
+    }
+}
+
+@mixin focus-indicator {
+    outline-offset: var(--joshica-ux-outline-offset, 3px);
+}
