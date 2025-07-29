@@ -1,3 +1,4 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -41,5 +42,12 @@ module.exports = {
         }
       ]
     },
-    mode: 'production'
+    mode: 'production',
+    plugins: [
+      new CopyWebpackPlugin({
+        patterns: [
+          { from: path.resolve(__dirname, 'dist/joshica.js'), to: path.resolve(__dirname, 'docs/joshica.js') }
+        ]
+      })
+    ]
   };
