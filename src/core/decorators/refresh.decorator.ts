@@ -1,4 +1,4 @@
-export function RefreshExperience() {
+export function Refresh() {
     return function (_value: undefined, context: ClassFieldDecoratorContext) {
         if (context.kind !== 'field') return;
 

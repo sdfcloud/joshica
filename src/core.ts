@@ -1,6 +1,6 @@
-import { RegisterExperience } from '@core/decorators/register-experience.decorator';
-import { RefreshExperience } from '@core/decorators/refresh-experience.decorator';
-import { LoadExperience } from '@core/decorators/load-experience.decorator';
+import { Experience } from '@core/decorators/experience.decorator';
+import { Refresh } from '@core/decorators/refresh.decorator';
+import { Load } from '@core/decorators/load.decorator';
 import { CoreExperience } from '@core/classes/core-experience.class';
 import { HTMLExperienceElement } from '@core/interfaces/html-experience-element.interface';
 import { UserExperienceInterface } from '@core/interfaces/user-experience.interface';
@@ -14,9 +14,9 @@ import '@core/api';
 
 export {
     // Decorators
-    RegisterExperience,
-    RefreshExperience,
-    LoadExperience,
+    Experience,
+    Refresh,
+    Load,
 
     // Classes
     CoreExperience,

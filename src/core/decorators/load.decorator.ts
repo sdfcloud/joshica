@@ -1,7 +1,7 @@
 import { uxQuerySelector } from '@core/functions/ux-query-selector.function';
 import { getUxExperience } from '@core/functions/get-ux-experience.function';
 
-export function LoadExperience(experience: string, selector?: string) {
+export function Load(experience: string, selector?: string) {
     return function (_value: undefined, context: ClassFieldDecoratorContext) {
         if (context.kind !== 'field') return;
 

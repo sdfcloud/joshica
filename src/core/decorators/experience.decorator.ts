@@ -3,7 +3,7 @@ import { UxGlobal } from '@core/classes/ux-global.class';
 import { HTMLExperienceElement } from '@core/interfaces/html-experience-element.interface';
 import { ExperienceOptionsInterface } from '@core/interfaces/experience-options.interface';
 
-export function RegisterExperience(options: ExperienceOptionsInterface) {
+export function Experience(options: ExperienceOptionsInterface) {
     return (UserExperience: Function) => {
         UxGlobal.get().registerExperience(
             options.id,

@@ -46,7 +46,7 @@ module.exports = {
     plugins: [
       new CopyWebpackPlugin({
         patterns: [
-          { from: path.resolve(__dirname, 'dist/joshica.js'), to: path.resolve(__dirname, 'docs/joshica.js') }
+          { from: path.resolve(__dirname, 'dist/joshica.js'), to: path.resolve(__dirname, 'docs/releases/latest/joshica.js') }
         ]
       })
     ]
