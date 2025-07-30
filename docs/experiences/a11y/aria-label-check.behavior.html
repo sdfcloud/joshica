@@ -19,7 +19,7 @@
                 <li><strong>UX Token:</strong> ariaLabelCheckBehavior</li>
                 <li><strong>Class Definition:</strong> <a href="https://github.com/sdfcloud/joshica/blob/main/src/experiences/a11y/aria-label-check.behavior.ts" target="_blank">AriaLabelCheckBehavior</a></li>
                 <li><strong>Imports:</strong> None</li>
-                <li><strong>Description:</strong> Contains logic to check the HTML Element for proper aria-label or aria-labeled-by. This experience will produce a console warning when an aria-label is missing. Use when you want to ensure aria-labels are correctly placed.</li>
+                <li><strong>Description:</strong> Contains logic to check the HTML Element for proper aria-label or aria-labelledby. This experience will produce a console warning when an aria-label is missing. Use when you want to ensure aria-labels are correctly placed.</li>
                 <li><strong>Use Case:</strong> This experience is meant for developers and provides reminders for where aria-labels should be added to enhance the user experience for assistive technology users. When developing experiences, this can be a helpful tool to guide those implementing your experiences to make sure they are placing aria-labels at the correct locations in code.</li>
             </ul>
         </section>
@@ -52,17 +52,17 @@
         </section>
 
         <section class="demo">
-            <h4>Example of aria-labeledby Present</h4>
-            <p>To see this experience in action, open the console in your browser's developer tools. The experience will log a warning if the element is missing an aria-label. In this demo, you will see that when the aria-labeledby is present on the element, there will be no console warning.</p>
+            <h4>Example of aria-labelledby Present</h4>
+            <p>To see this experience in action, open the console in your browser's developer tools. The experience will log a warning if the element is missing an aria-label. In this demo, you will see that when the aria-labelledby is present on the element, there will be no console warning.</p>
             <p>Code:</p>
 <pre class="code">
 &lt;button ux="ariaLabelCheckBehavior"
-    aria-labelby="modalTitle"&gt;
+    aria-labelledby="modalTitle"&gt;
     Button With aria-label
 &lt;/button&gt;
 </pre>
             <p>Live Demo:</p>
-            <button ux="ariaLabelCheckBehavior" aria-label="opens modal">Button With aria-labeledby</button>
+            <button ux="ariaLabelCheckBehavior" aria-labelledby="opens modal">Button With aria-labelledby</button>
         </section>
 
         <h3>API</h3>

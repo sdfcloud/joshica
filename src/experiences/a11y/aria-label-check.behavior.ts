@@ -16,10 +16,10 @@ export class AriaLabelCheckBehavior extends CoreExperience {
     }
 
     /**
-     * Checks to see if the aria-label or aria-labeledby attribute is present on the element.
+     * Checks to see if the aria-label or aria-labelledby attribute is present on the element.
      */
     public isAriaLabelPresent(): boolean {
-        return this.element.hasAttribute('aria-label') && !this.element.hasAttribute('aria-labelledby');
+        return this.element.hasAttribute('aria-label') || this.element.hasAttribute('aria-labelledby');
     }
 
 }

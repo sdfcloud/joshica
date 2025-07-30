@@ -5,7 +5,7 @@ export declare class AriaLabelCheckBehavior extends CoreExperience {
      */
     onRefresh(): void;
     /**
-     * Checks to see if the aria-label or aria-labeledby attribute is present on the element.
+     * Checks to see if the aria-label or aria-labelledby attribute is present on the element.
      */
     isAriaLabelPresent(): boolean;
 }

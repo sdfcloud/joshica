@@ -17,28 +17,20 @@
         <p>A light-weight bundle of user experiences for web apps</p>
     </div>
     <div class="container">
-        <section class="demo">
-            <h2>Quick Demo</h2>
+        <section class="getting-started">
+            <h2>Quick Start</h2>
+            <p>1) Include the latest release in your project:</p>
 <pre class="code">
-&lt;div id="modal" ux="modalWidget"&gt;
-    This is a sample modal dialog box.
-&lt;/div&gt;
-
-&lt;button id="modalButton" ux="buttonBehavior" action="#modal, modalWidget, open"&gt;Open Modal&lt;/button&gt;
+&lt;script src="https://www.joshica.dev/releases/latest/joshica.js"&gt;&lt;/script&gt
 </pre>
-            <div id="modal" ux="modalWidget">
-                This is a sample modal dialog box.
-            </div>
-            <button id="modalButton" ux="buttonBehavior" action="#modal, modalWidget, open">Open Modal</button>
-            <script>
-                document.getElementById('modalButton').addEventListener('click', function() {
-                    const modalEl = ux.querySelector('#modal');
-                    const uiModal = ux.getUx(modalEl, 'uiModal');
-                    uiModal.open();
-                });
-
-                ux.refresh();
-            </script>
+            <p>2) Apply experiences to your app by adding the <code>ux</code> attribute to HTML elements:</p>
+<pre class="code">
+&lt;div id="learnMoreModal" ux="modalBehavior"&gt;Modal Content&lt;/div&gt;
+</pre>
+            <p>3) Refresh the user experience:</p>
+<pre class="code">
+ux.refresh();
+</pre>
         </section>
 
         <h2>Experiences</h2>
