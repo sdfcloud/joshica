@@ -8,4 +8,4 @@ export function refresh(): void {
     UxGlobal.get().refresh();
 }
 
-// @copyright sdfcloud.
+// @copyright thebytebar.

@@ -34,4 +34,4 @@ export {
     getUxExperience
 };
 
-// @copyright sdfcloud.
+// @copyright thebytebar.

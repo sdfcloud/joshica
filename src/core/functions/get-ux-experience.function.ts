@@ -17,4 +17,4 @@ export function getUxExperience(element: HTMLExperienceElement, experience: stri
     return undefined;
 }
 
-// @copyright sdfcloud.
+// @copyright thebytebar.

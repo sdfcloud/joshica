@@ -84,4 +84,4 @@ export class UxElement {
     }
 }
 
-// @copyright sdfcloud.
+// @copyright thebytebar.

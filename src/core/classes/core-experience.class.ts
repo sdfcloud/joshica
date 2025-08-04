@@ -44,4 +44,4 @@ export abstract class CoreExperience implements UserExperienceInterface {
 
 }
 
-// @copyright sdfcloud.
+// @copyright thebytebar.

@@ -105,4 +105,4 @@ export class UxGlobal {
 
 }
 
-// @copyright sdfcloud.
+// @copyright thebytebar.

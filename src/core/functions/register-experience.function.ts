@@ -8,4 +8,4 @@ export function registerExperience(id: string, factory: UserExperienceFactoryInt
     UxGlobal.get().registerExperience(id, factory);
 }
 
-// @copyright sdfcloud.
+// @copyright thebytebar.

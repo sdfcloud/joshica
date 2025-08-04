@@ -20,4 +20,4 @@ export interface HTMLExperienceElement extends HTMLElement {
 
 }
 
-// @copyright sdfcloud.
+// @copyright thebytebar.

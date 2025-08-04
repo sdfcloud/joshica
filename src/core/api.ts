@@ -15,4 +15,4 @@ const api = {
 
 (<any>window).ux = api;
 
-// @copyright sdfcloud.
+// @copyright thebytebar.

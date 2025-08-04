@@ -11,4 +11,4 @@ export function uxQuerySelectorAll(selector: string): HTMLExperienceElement[] | 
     return filteredElements as HTMLExperienceElement[];
 }
 
-// @copyright sdfcloud.
+// @copyright thebytebar.

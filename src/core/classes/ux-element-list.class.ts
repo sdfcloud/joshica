@@ -64,4 +64,4 @@ export class UxElementList {
 
 }
 
-// @copyright sdfcloud.
+// @copyright thebytebar.

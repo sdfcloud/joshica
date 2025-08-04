@@ -3,4 +3,4 @@ export interface ExperienceOptionsInterface {
     imports?: string[]
 }
 
-// @copyright sdfcloud.
+// @copyright thebytebar.

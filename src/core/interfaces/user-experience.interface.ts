@@ -24,4 +24,4 @@ export interface UserExperienceInterface {
 
 }
 
-// @copyright sdfcloud.
+// @copyright thebytebar.
