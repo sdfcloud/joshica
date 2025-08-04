@@ -3,12 +3,11 @@
     "version": "1.0.0-alpha.2",
     "description": "The User Experience Project",
     "scripts": {
-        "build": "npm run clean && node_modules/.bin/webpack",
-        "build:dev": "npm run clean && node_modules/.bin/webpack --mode=development",
-        "build:dev:watch": "npm run clean && node_modules/.bin/webpack --mode=development --watch",
+        "build": "node build/prod.js",
+        "build:dev": "node build/dev.js",
+        "build:dev:watch": "nodemon -V --watch src -e ts,scss,css,md,js --exec \"node build/dev.js\"",
         "start:demo": "node server.js",
-        "start:development": "concurrently -n \"build,demo\"  \"npm run build:dev:watch\" \"npm run start:demo\"",
-        "clean": "rm -rf dist"
+        "start:development": "concurrently -n \"build,demo\"  \"npm run build:dev:watch\" \"npm run start:demo\""
     },
     "repository": {
         "type": "git",
@@ -25,6 +24,10 @@
         "copy-webpack-plugin": "^13.0.0",
         "css-loader": "^7.1.2",
         "express": "^5.1.0",
+        "glob": "^11.0.3",
+        "html-webpack-plugin": "^5.6.3",
+        "marked": "^16.1.1",
+        "nodemon": "^3.1.10",
         "sass": "^1.89.2",
         "sass-loader": "^16.0.5",
         "style-loader": "^4.0.0",
