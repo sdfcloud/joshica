@@ -64,4 +64,4 @@ export class UxElementList {
 
 }
 
-// @copyright thebytebar.
+// @copyright TheByteBar

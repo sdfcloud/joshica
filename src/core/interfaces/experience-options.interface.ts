@@ -3,4 +3,4 @@ export interface ExperienceOptionsInterface {
     imports?: string[]
 }
 
-// @copyright thebytebar.
+// @copyright TheByteBar

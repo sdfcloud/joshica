@@ -21,4 +21,4 @@ export function Load(experience: string, selector?: string) {
     };
 }
 
-// @copyright thebytebar.
+// @copyright TheByteBar

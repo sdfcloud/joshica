@@ -44,4 +44,4 @@ export abstract class CoreExperience implements UserExperienceInterface {
 
 }
 
-// @copyright thebytebar.
+// @copyright TheByteBar

@@ -26,4 +26,4 @@ export function Refresh() {
     };
 }
 
-// @copyright thebytebar.
+// @copyright TheByteBar

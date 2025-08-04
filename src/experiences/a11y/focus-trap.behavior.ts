@@ -72,4 +72,4 @@
 //     }
 // }
 
-// // @copyright thebytebar.
+// // @copyright TheByteBar

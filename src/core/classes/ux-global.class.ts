@@ -105,4 +105,4 @@ export class UxGlobal {
 
 }
 
-// @copyright thebytebar.
+// @copyright TheByteBar

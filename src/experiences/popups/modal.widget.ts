@@ -81,4 +81,4 @@
 
 // }
 
-// // @copyright thebytebar.
+// // @copyright TheByteBar

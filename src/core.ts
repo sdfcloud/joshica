@@ -34,4 +34,4 @@ export {
     getUxExperience
 };
 
-// @copyright thebytebar.
+// @copyright TheByteBar

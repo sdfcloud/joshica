@@ -21,4 +21,4 @@ export function Experience(options: ExperienceOptionsInterface) {
     }
 }
 
-// @copyright thebytebar.
+// @copyright TheByteBar

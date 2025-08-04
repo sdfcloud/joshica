@@ -128,4 +128,4 @@
 //     }
 // }
 
-// // @copyright thebytebar.
+// // @copyright TheByteBar

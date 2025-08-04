@@ -3,4 +3,4 @@ import { HTMLExperienceElement } from '@core/interfaces/html-experience-element.
 
 export type UserExperienceFactoryInterface = (element: HTMLExperienceElement) => UserExperienceInterface;
 
-// @copyright thebytebar.
+// @copyright TheByteBar

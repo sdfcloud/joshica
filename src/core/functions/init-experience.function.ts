@@ -23,4 +23,4 @@ export function initExperience(element: HTMLExperienceElement, experience: strin
     return undefined;
 }
 
-// @copyright thebytebar.
+// @copyright TheByteBar

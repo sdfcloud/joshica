@@ -84,4 +84,4 @@ export class UxElement {
     }
 }
 
-// @copyright thebytebar.
+// @copyright TheByteBar

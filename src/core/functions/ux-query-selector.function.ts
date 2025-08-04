@@ -21,4 +21,4 @@ export function uxQuerySelector(selector: string): HTMLExperienceElement | undef
     return undefined;
 }
 
-// @copyright thebytebar.
+// @copyright TheByteBar
