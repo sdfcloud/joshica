@@ -6,9 +6,9 @@
 
 </section>
 
-<section>
-
 ## Quick Start
+
+<section>
 
 1 - Include the latest release in your project:
 ```
@@ -40,7 +40,7 @@ ux.refresh();
             <p>Contains logic to check the HTML Element for proper aria-label or aria-labeled-by. This experience will produce a console warning when an aria-label is missing. Use when you want to ensure aria-labels are correctly placed.</p>
         </div>
         <div class="actions">
-            <a href="/experiences/a11y/aria-label-check.behavior.html" class="btn">Learn More</a>
+            <a href="/experiences/aria-label-validation-behavior.html" class="btn">Learn More</a>
         </div>
     </div>
     <div class="experience">

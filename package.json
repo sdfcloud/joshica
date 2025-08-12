@@ -11,14 +11,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sdfcloud/joshica.git"
+        "url": "git+https://github.com/thebytebar/joshica.git"
     },
     "author": "joshica",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/sdfcloud/joshica/issues"
+        "url": "https://github.com/thebytebar/joshica/issues"
     },
-    "homepage": "https://github.com/sdfcloud/joshica#readme",
+    "homepage": "https://github.com/thebytebar/joshica#readme",
     "devDependencies": {
         "concurrently": "^9.2.0",
         "copy-webpack-plugin": "^13.0.0",

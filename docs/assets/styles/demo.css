@@ -35,9 +35,6 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    background-image: url(/assets/img/usa-banner.jpg);;
-    background-size: cover;
-    background-position: center top;
 }
 
 header h1 {
@@ -49,9 +46,10 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
-    background-image: url(/assets/img/usa-banner.jpg);;
+    background-image: url(/assets/img/usa-banner.jpg);
+    ;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
 }
 
 footer a {
